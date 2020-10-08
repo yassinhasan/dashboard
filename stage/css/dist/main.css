@@ -1,0 +1,11 @@
+body {
+  background-color: yellow;
+}
+
+* {
+  color: red;
+}
+
+button {
+  transform: rotate(10deg);
+}
