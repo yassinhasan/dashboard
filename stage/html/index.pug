@@ -7,8 +7,10 @@ html(lang="en")
         title #{pagetitile}
     body
         .homepage.page
-            .side-bar sidebar
-            .content-area  #{pagetitile}
+            include pug/sections/sidebar.pug
+            .content-area 
+                include pug/sections/header.pug
+                .content #{pagetitile}
         
         // start settings
 

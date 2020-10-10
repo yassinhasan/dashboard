@@ -7,4 +7,7 @@
     height: 100vh;
     transition: all .4s;
     will-change: width;
+    &.no-sidebar{
+        left: -250px;
+    }
 }

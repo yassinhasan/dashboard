@@ -1,8 +1,12 @@
 .content-area{
     width: calc(100% - 250px);
-    background-color: royalblue;
+    background-color: #eee;
     color: seagreen;
     float: right;
     transition: all .4s;
+    height: 100vh;
     will-change: width;
+    &.full-width{
+        width: 100%;
+    }
 }
