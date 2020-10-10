@@ -20,7 +20,7 @@ gulp.task('html',function(){
 gulp.task('css',function(){
     return gulp.src(['stage/css/**/*.scss','stage/css/**/*.css'])
      .pipe(sourcemaps.init())
-     .pipe(sass({outputStyle: "compressed"}).on('error',sass.logError))
+     .pipe(sass({outputStyle: "compressed"}))
      .pipe(autoprefixer())
      .pipe(concat('main.css'))
      .pipe(sourcemaps.write('.')) //في مكان جنب المكان الي انا عملت فيه كونكات دي فكره الدوت

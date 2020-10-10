@@ -1,5 +1,4 @@
-body{background-color:yellow}*{color:red}button{-webkit-transform:rotate(10deg);transform:rotate(10deg)}
+.side-bar{position:fixed;top:0;left:0;width:250px;background-color:rosybrown;height:100vh;-webkit-transition:all .4s;transition:all .4s;will-change:width}.side-bar{position:fixed;top:0;left:0;width:250px;background-color:rosybrown;height:100vh;-webkit-transition:all .4s;transition:all .4s;will-change:width}.content-area{width:calc(100% - 250px);background-color:royalblue;color:seagreen;float:right;-webkit-transition:all .4s;transition:all .4s;will-change:width}
 
-body{background-color:yellow}*{color:red}button{-webkit-transform:rotate(10deg);transform:rotate(10deg)}
 
 /*# sourceMappingURL=main.css.map */

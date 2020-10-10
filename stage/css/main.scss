@@ -1,13 +1,3 @@
-
-body{
-    background-color: yellow;
-
-
-}
-*{
-    color: red;
-
-}
-button{
-    transform: rotate(10deg);
-}
+@import 'stage/css/sass/global/global';
+@import 'stage/css/sass/components/sidebar';
+@import 'stage/css/sass/components/content-area'
