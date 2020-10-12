@@ -3,11 +3,92 @@
     top: 0;
     left: 0;
     width: 250px;
-    background-color: rosybrown;
+    background-color: #282c33;
     height: 100vh;
     transition: all .4s;
     will-change: width;
+    color: #fff;
     &.no-sidebar{
         left: -250px;
     }
+    .logo-area{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .links-area{
+        padding: 25px;
+        li{
+
+            a{
+                color: #ccc;
+                padding: 10px 20px;
+                display: block;
+                transition: all .5s;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .toggle-subminue{
+                    float: right;
+                    cursor: pointer;
+                    position: relative;
+                    top: 3px;
+                    font-size: 18px;
+                    transition: all .6s;
+                }
+            }
+        }
+        > li > a{ 
+                color: #ffff;
+                position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 0;
+                        -webkit-transform: translateY(50%);
+                        transform: translateY(-50%);
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        border: 2px solid #fff;
+
+
+                    }
+                    &:hover{
+                        padding-left: 25px;
+                    }    
+        }
+        .child-links{
+            display: none;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background-color: #666;
+            }
+            li{
+                a{
+                    position: relative;
+                    transition: all 1s;
+                    &:hover:before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
