@@ -1,10 +1,78 @@
 .content-area{
     .header{
         background-color: #fff;
-        padding: 15px;
+        padding: 20px;
         .toogle-sidebar{
             cursor: pointer;
-            } 
+            color: #777;
+        } 
+        .notification-container{
+            display: inline-block;
+            margin-left: 20px;
+            color: #777;
+            i{
+                cursor: pointer;
+            }
+            .dropdown-menu{
+                background-color: #ededed;
+                min-width: 600px;
+                border: none;
+                -webkit-box-shadow: 10px 0px #fff #eee;
+                box-shadow: 10px 0px #fff #eee;
+                box-shadow: 3px 4px #ffd6d8;
+                margin-top: 15px;
+                transform: translate3d(-12px, 20px, 0px);
+                left: -20px!important;
+                padding-top: 0;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    border-width: 10px;
+                    border-color: transparent transparent black transparent;
+                    box-shadow: 10px 0px #fff #eee;
+                    border-style: solid;
+                    top: -19px;
+                    left: 19px;
+                    
+                }
+                .noti-head{
+                    background-color: black;
+                    color: #fff;
+                    padding: 15px;
+                    span{
+                        float: right;
+                    }
+                }
+                .noti-content{
+                    padding: 15px;
+                    ul{
+                        li{
+                            padding: 10px;
+                            i{
+
+                            }
+                        }
+                    }
+                }
+                .noti-footer{
+                    text-align: center;
+                    display: block;
+                    border-top: 2px solid #f3f3f3;
+                    padding: 10px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            
+            }
+        }
+        .full-screen {
+            color: #777;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
     }
 
 }

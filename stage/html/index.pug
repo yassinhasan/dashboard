@@ -10,8 +10,9 @@ html(lang="en")
             include pug/sections/sidebar.pug
             .content-area 
                 include pug/sections/header.pug
-                .content #{pagetitile}
+                .container-fluid 
+                    .content 
+                        include pug/sections/head.pug
         
         // start settings
-
         include pug/scripts/script.pug  
