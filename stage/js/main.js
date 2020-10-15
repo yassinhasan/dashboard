@@ -50,4 +50,29 @@ $(function(){
         }
       });
 
+      //start settings
+        // start settings
+  //    toggle  settings
+      $(".toggle-settings").click(function () {
+        $(this).find('i').toggleClass("fa-cog  fa-times");
+          $(".setting").toggleClass('hide');
+    });
+  
+    $(".setting").click(function (e) {
+      e.stopPropagation();
+    });
+  //  close settings by click on body
+    $("html,body").click(function (e) {
+      var settingright = $(".setting").css("right");
+      if (e.target !== $(".setting")) {
+        if (! $(".setting").hasClass('hide')) {
+          console.log('hellp');
+          $(".setting").toggleClass('hide');
+  
+          $(".toggle-settings i").toggleClass("fa-cog  fa-times");
+        }
+      }
+    });
+      // end settings
+
 })

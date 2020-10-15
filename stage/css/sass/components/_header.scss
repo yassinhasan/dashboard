@@ -72,7 +72,93 @@
             cursor: pointer;
             margin-left: 20px;
         }
+        .user-container{
+            float: right;
+            color: #777;
+            position: relative;
+            bottom: 6px;        
+            .user{
+                cursor: pointer;
+                display: inline;
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+                .username{
+                    margin: 0 10px 0 5px;
+                    color: $flatiblue;
+                }
+            }
+            .dropdown-menu{
+                background-color: #f3f3f3;
+                min-width: 600px;
+                border: 2px solid #ddd;
+                margin-top: 15px;
+                transform: translate3d(-12px, 20px, 0px);
+                left: 5px!important;
+                padding-top: 0;
+                padding: 30px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    border-width: 10px;
+                    border-color: transparent transparent #f3f3f3 transparent;
+                    box-shadow: 10px 0px #fff #eee;
+                    border-style: solid;
+                    top: -19px;
+                    right: 40px;
+                    
+                }
+                .user-info{
+                    h3{
+                        position: relative;
+                        font-weight: bold;
+                        color: $flatiblue;
+                        cursor: pointer;
+                        }
+                    p{
+                        color: #888;
+                    }
+
+                }
+                .activities-list{
+                    padding: 10px;
+
+                    li{
+                        position: relative;
+                        &:before{
+                            position: absolute;
+                            content: '';
+                            top: 50%;
+                            left: -17px;
+                            -webkit-transform: translateY(50%);
+                            transform: translateY(-50%);
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 50%;
+                            border: 2px solid $flatredalt;
+                        }
+                    }
+                }
+                .user-links{
+                    padding: 10px;
+                    .link-box{
+                        padding: 5px 10px;
+                        background-color: #ddd;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        i{
+                            margin-right: 6px;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
 
     }
+
 
 }

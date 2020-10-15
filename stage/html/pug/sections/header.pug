@@ -16,7 +16,31 @@
                             i.fa.fa-camera.fa-lg  you hav got email                                                        
             .noti-footer
                 a(href="#") show all notification
-         
-
-
-
+    i(class="fas fa-arrows-alt fa-lg full-screen" title="Toggle full screen") 
+    .dropdown.user-container
+        .user#mega( data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img(src="/dist/images/master1.jpg" class="rounded-circle")
+            span.username  Yassin Meady
+            i.fas.fa-angle-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='mega')       
+            .user-info
+                h3 Yassin Hasan
+                p.lead Premium Member
+            ul.activities-list.list-unstyled    
+                li he is 6 years old
+                li he is aboy
+                li he studies in elrayda scholl
+            hr
+            .row.user-links
+                .col
+                    .link-box
+                        i(class="fa fa-check fa-lg")
+                        span edit profile
+                .col
+                     .link-box
+                        i(class="far fa-laugh fa-lg")
+                        span activity : on
+                .col    
+                     .link-box 
+                        i(class="fas fa-male fa-lg")
+                        span GENDER : male
