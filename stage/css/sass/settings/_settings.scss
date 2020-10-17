@@ -76,6 +76,23 @@
   }
 
   }
+  .selectfonts{
+      $Krona-One : 'Pacifico', cursive;
+      $Lora      : 'Lora', serif;
+      $Chilanka   : 'Chilanka', cursive;
+      $Dancing-Script : 'Dancing Script', cursive;
+      $Pacifico       :'Pacifico', cursive;
+     $selectfonts : ( $Krona-One , $Lora  , $Chilanka , $Dancing-Script , $Pacifico);
+      $i : 1;
+      @each $font in $selectfonts {
+        option:nth-child(#{$i}){
+          font-family: $font;
+          $i: 1+ $i;
+        }
+        font-family: $font;
+
+      }     
+  }
 
   .navbar-option {
     padding-bottom: 80px;

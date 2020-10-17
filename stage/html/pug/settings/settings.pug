@@ -9,6 +9,9 @@ div.setting.hide
                     li(data-theme = theme)
             button.res Reset
         <hr>
+        select.selectfonts
+            each font in fonts
+                option(data-fonts= font) #{font}
         div.navbar-option
             h4 Navbar Background
             button.whitebtn White

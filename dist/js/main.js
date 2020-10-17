@@ -84,6 +84,19 @@ $(function(){
         $(this).addClass('active').siblings().removeClass('active');
         $('body').removeClass(themesclasses.join(" "));
         $('body').addClass( $(this).data('theme'))
+      });
+
+      // start font settings 
+      var themefonts = [];
+      $('.selectfonts option').each(function(el){
+        themefonts.push($(this).data('fonts'));
+      });
+      console.log(themefonts);
+      $('.selectfonts').on('change',function(){
+        console.log('hi');
+        // $(this).addClass('active').siblings().removeClass('active');
+        $('body').removeClass(themefonts.join(" "));
+        $('body').addClass( $(this).children("option:selected").data('fonts'))
       })
 
 

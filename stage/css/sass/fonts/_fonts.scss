@@ -1,0 +1,22 @@
+$Krona-One : 'Pacifico', cursive;
+$Lora      : 'Lora', serif;
+$Chilanka   : 'Chilanka', cursive;
+$Dancing-Script : 'Dancing Script', cursive;
+$Pacifico       :'Pacifico', cursive;
+
+
+$fonts : (
+    "Krona-One" : ("fonts" : $Krona-One),
+    "Lora"      : ("fonts" : $Lora),
+    "Chilanka" : ("fonts" : $Chilanka),
+    "Dancing-Script"  : ("fonts":$Dancing-Script),
+    "Pacifico"  : ("fonts" : $Pacifico )
+);
+
+@each $font,$map in $fonts {
+    .#{$font}{
+        .page .headinfo .page-title{
+            font-family: map-get($map,fonts );
+        }
+    }   
+}
