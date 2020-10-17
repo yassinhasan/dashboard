@@ -1,4 +1,21 @@
 $flatiblue : #3498db;
 $flatbluealt   : #2980b9;
 $flatred   :#c0392b;
-$flatredalt : #e74c3c
+$flatredalt : #e74c3c;
+
+$themes : (   //   الاوبجكت هنا بنفتحله اقواس 
+    green-theme : (color : #2ecc71),
+    red-theme   : (color : #c0392b),
+    blue-theme  : (color :#2980b9 ),
+    orange-color : (color : #e67e22),
+    yellow-color: (color : #f1c40f)
+);
+
+@each $theme,$map in $themes {
+    .#{$theme}{   
+        .page .headinfo .page-title{
+            color : map-get($map, color)
+        }
+    }
+};
+

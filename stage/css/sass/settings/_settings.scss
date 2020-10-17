@@ -30,18 +30,30 @@
       text-align: left;
     }
     ul{
-      $colors: #f08080,#dc3545,#18a7b5,#97c92c,#d2b48c;
-      @for $i from 1 through length($colors){
+      $colors:(#2ecc71,#c0392b,#2980b9,#e67e22,#f1c40f);
+      $i : 1;
+      @each $color in $colors {
         li:nth-child(#{$i}){
-          background-color: nth($colors, $i);
+          background-color: $color;
+          $i: 1+ $i;
         }
+        
       }
+      // @for $i from 1 through length($colors){
+      //   li:nth-child(#{$i}){
+      //     background-color: nth($colors, $i);
+      //   }
+      // }
       li {
         width: 30px;
         height: 30px;
         display: inline-block;
         margin-right: 10px;
         cursor: pointer;
+        opacity: 0.5;
+        &.active{
+          opacity: 1;
+        }
     }
 
     }

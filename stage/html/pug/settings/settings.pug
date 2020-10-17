@@ -1,12 +1,12 @@
-div.setting
+div.setting.hide
     .container
         span.toggle-settings
             i.fas.fa-cog.fa-lg
         div.color-option
             h4 Template Color
-            ul.list-unstyled
+            ul.list-unstyled.color-option
                 each theme in themes
-                    li(data-color = theme)
+                    li(data-theme = theme)
             button.res Reset
         <hr>
         div.navbar-option

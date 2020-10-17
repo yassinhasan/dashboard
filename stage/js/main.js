@@ -74,5 +74,17 @@ $(function(){
       }
     });
       // end settings
+      // switch between color 
+      var themesclasses = [];
+      $('.color-option li').each(function(el){
+        themesclasses.push($(this).data('theme'));
+      });
+      console.log(themesclasses);
+      $('.color-option li').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('body').removeClass(themesclasses.join(" "));
+        $('body').addClass( $(this).data('theme'))
+      })
 
-})
+
+});
