@@ -9,7 +9,7 @@ const notify = require("gulp-notify");
 const minify = require('gulp-minify');
 
 gulp.task('html',function(){
-    return gulp.src('stage/html/*.pug')
+    return gulp.src(['stage/html/*.pug','stage/**/*.pug'])
      .pipe(sourcemaps.init())
      .pipe(GulpPug({pretty: true}))
      .pipe(sourcemaps.write('.'))

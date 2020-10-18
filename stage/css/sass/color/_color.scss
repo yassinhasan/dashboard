@@ -8,13 +8,20 @@ $themes : (   //   الاوبجكت هنا بنفتحله اقواس
     red-theme   : (color : #c0392b),
     blue-theme  : (color :#2980b9 ),
     orange-color : (color : #e67e22),
-    yellow-color: (color : #f1c40f)
+    yellow-color: (color : #f1c40f),
+    grey-color : (color : #34495e)
 );
 
 @each $theme,$map in $themes {
     .#{$theme}{   
-        .page .headinfo .page-title{
+        .page .headinfo .page-title,.content-area .header .toogle-sidebar:hover,
+        .content-area .header .user-container .user .username,
+        .content-area .header .user-container .dropdown-menu .user-info h3,
+        .content-area .header .notification-container i:hover{
             color : map-get($map, color)
+        }
+        .side-bar .links-area .child-links li a:hover:before {
+            background-color: map-get($map, color);
         }
     }
 };

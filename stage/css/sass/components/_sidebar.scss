@@ -42,6 +42,9 @@
         > li > a{ 
                 color: #ffff;
                 position: relative;
+                    &.active:before{
+                        border-color: red;
+                    }
                     &:before{
                         position: absolute;
                         content: '';
@@ -81,7 +84,7 @@
                         left: 0;
                         width: 3px;
                         height: 100%;
-                        background-color: #fff;
+                        background-color: #2980b9;
                     }
                 }
             }

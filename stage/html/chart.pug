@@ -1,0 +1,20 @@
+include pug/variables/variables.pug
+-var pagetitile = 'chart';
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/meta/meta.pug
+        include pug/links/links.pug
+        title #{pagetitile}
+    body
+        .homepage.page
+            include pug/sections/sidebar.pug
+            .content-area 
+                include pug/sections/header.pug
+                .container-fluid 
+                    .content 
+                        include pug/sections/headinfo.pug
+            include pug/settings/settings.pug               
+        
+        // start settings
+        include pug/scripts/script.pug  

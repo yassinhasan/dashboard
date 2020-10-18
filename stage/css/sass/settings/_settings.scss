@@ -30,7 +30,7 @@
       text-align: left;
     }
     ul{
-      $colors:(#2ecc71,#c0392b,#2980b9,#e67e22,#f1c40f);
+      $colors:(#2ecc71,#c0392b,#2980b9,#e67e22,#f1c40f,#34495e);
       $i : 1;
       @each $color in $colors {
         li:nth-child(#{$i}){

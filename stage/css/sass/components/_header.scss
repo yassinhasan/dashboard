@@ -5,6 +5,9 @@
         .toogle-sidebar{
             cursor: pointer;
             color: #777;
+            &:hover{
+                color: #2980b9;
+            }
         } 
         .notification-container{
             display: inline-block;
@@ -12,6 +15,10 @@
             color: #777;
             i{
                 cursor: pointer;
+                &:hover{
+                    color: #2980b9;
+                }
+                
             }
             .dropdown-menu{
                 background-color: #ededed;
@@ -86,7 +93,7 @@
                 }
                 .username{
                     margin: 0 10px 0 5px;
-                    color: $flatiblue;
+                    color: #2980b9;
                 }
             }
             .dropdown-menu{
@@ -113,7 +120,7 @@
                     h3{
                         position: relative;
                         font-weight: bold;
-                        color: $flatiblue;
+                        color: #2980b9;
                         cursor: pointer;
                         }
                     p{

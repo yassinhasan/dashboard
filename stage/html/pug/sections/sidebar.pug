@@ -1,7 +1,7 @@
 .side-bar
     .logo-area Yassin
     ul.links-area.list-unstyled
-        li: a(href="#")    Home
+        li: a(href="homepage.html" class= pagetitile === 'Home' ? 'active' : '')    Home 
         li
             a(href="#")    
                 |FORMS
@@ -13,12 +13,15 @@
                 li: a(href="#")    pages
         li
             a(href="#")    
-                |Content
+                |Info
                 i.fas.fa-angle-right.toggle-subminue
             ul.child-links.list-unstyled
                 li: a(href="#")    mixing
                 li: a(href="#")    uploads
-                li: a(href="#")    pages                                                                
+                li: a(href="#")    pages 
+        li
+            a(href="chart.html" class= pagetitile === 'chart' ? 'active' : '')    
+                |Chart                                                                               
 
 
 
